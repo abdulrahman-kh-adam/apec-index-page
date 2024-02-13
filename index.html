@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEC</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row heading-nav">
+                <div class="col-2 nav-logo d-flex align-items-center">
+                    <a href="#"><img src="imgs/logo.png" alt="APEC"></a>
+                </div>
+                <div class="d-none d-md-flex col-10 align-items-center">
+                    <ul class="d-flex w-100 flex-row justify-content-end mb-0 nav-bar">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#committees">Committees</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#login">Login</a></li>
+                        <li><a href="#signup">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex d-md-none col-10 justify-content-end align-items-center nav-menu-mobile">
+                    <i class="fa-solid fa-bars menu" data-bs-toggle="collapse" href="#collapsemenu" role="button" aria-expanded="false" aria-controls="collapsemenu"></i>
+                    <ul class="collapse" id="collapsemenu">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#committees">Committees</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#login">Login</a></li>
+                        <li><a href="#signup">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="landing">
+        <div class="landing-content">
+            <p class="landing-title">APEC</p>
+            <p class="landing-desc">Associative Power Engineering Community is a non-profitable organization, headquartered in the Faculty of Engineering, Ain Shams University.</p>
+                <p class="landing-foot">
+                <i class="fa-solid fa-quote-left q-left"></i>
+                Because you matter
+                <i class="fa-solid fa-quote-right q-right"></i>
+            </p>
+        </div>
+    </div>
+    <div class="sponsers">
+        <div class="container">
+            <div class="main-partner w-70 w-md-100 animate">
+                <div class="section-title">Main Partner</div>
+                <a href="https://www.alumil.com/egypt/homeowners"><img src="imgs/Alumil White.png" alt="Main Partner" class="img-fluid img"></a>
+            </div>
+            <div class="main-sponser w-70 w-md-100 animate">
+                <div class="section-title">Main Sponsor</div>
+                <a href="https://www.siemens.com/global/en.html"><img src="imgs/logo-dark-3958fff2.svg" alt="Main Partner" class="img-fluid img"></a>
+            </div>
+            <div class="off-sponser w-70 w-md-100 animate">
+                <div class="section-title">Official Sponsor</div>
+                <a href="https://www.muehlbauer.de/"><img src="imgs/Muhlbauer white.png" alt="Main Partner" class="img-fluid img"></a>
+            </div>
+        </div>
+    </div>
+    <div class="gallery w-70 w-md-100" id="gallery">
+        <div class="container gal-content animate">
+            <div class="section-title">Our Gallery</div>
+            <div id="gallery-slideshow" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/gallery/1.jpg" class="d-block w-100 img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/gallery/Apec22.jpg" class="d-block w-100 img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/gallery/boba.jpg" class="d-block w-100 img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/gallery/crew photo.jpg" class="d-block w-100 img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/gallery/DSCN4966.jpg" class="d-block w-100 img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/gallery/Main.png" class="d-block w-100 img-fluid"> 
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#gallery-slideshow" data-bs-slide-to="0" class="active" id="indicator"></button>
+                    <button type="button" data-bs-target="#gallery-slideshow" data-bs-slide-to="1" id="indicator"></button>
+                    <button type="button" data-bs-target="#gallery-slideshow" data-bs-slide-to="2" id="indicator"></button>
+                    <button type="button" data-bs-target="#gallery-slideshow" data-bs-slide-to="3" id="indicator"></button>
+                    <button type="button" data-bs-target="#gallery-slideshow" data-bs-slide-to="4" id="indicator"></button>
+                    <button type="button" data-bs-target="#gallery-slideshow" data-bs-slide-to="5" id="indicator"></button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#gallery-slideshow" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gallery-slideshow" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="about animate" id="about">
+        <div class="container">
+            <div class="section-title">About Us</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-12 col-md-4 me-md-3 left">
+                    <h3>About APEC</h3>
+                    <p>Associative Power Engineering Community is a non-profitable organization, headquartered in the Faculty of Engineering, Ain Shams University. Founded in October 2006, APEC has pioneered the field of technical student development and is setting new standards by offering more opportunities with rich content. APEC in cooperation with leading multinational/national companies offers free technical courses, visits & summer training opportunities for undergraduates besides many other events.</p>
+                </div>
+                <div class="col-12 col-md-4 ms-md-3 right">
+                    <h3>Vision</h3>
+                    <p>Provide a development environment for students to flourish their technical and non-technical skills dominating the job market requirements.</p>
+                    <h3>Mission</h3>
+                    <p>To raise the awareness among the students regarding engineering fields updates, and provide a variety of tools to develop the engineering students.</p>
+                    <h3>Target Market</h3>
+                    <p>Engineering students form all departments and throughout all universities centered at the Faculty of Engineering, Ain Shams University.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="committees" id="committees">
+        <div class="container">
+            <div class="section-title">Our committees</div>
+            <div class="items">
+                <div class="item" role="button" data-bs-toggle="modal" data-bs-target="#itPopUp">
+                    <img src="imgs/comm/it.jpg" class="img-fluid">
+                    <p>Information Technology</p>
+                </div>
+                <div class="modal fade" id="itPopUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pop-up">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-header">Information Technology</div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Create, develop and update APEC website.</li>
+                                    <li>Build the online registration system; online forms, PSTs, etc.</li>
+                                    <li>Manage applicants and APEC database.</li>
+                                    <li>Update APEC history and ongoing events on the website.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" role="button" data-bs-toggle="modal" data-bs-target="#hrPopUp">
+                    <img src="imgs/comm/hr.jpg" class="img-fluid">
+                    <p>Human Resources</p>
+                </div>
+                <div class="modal fade" id="hrPopUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pop-up">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-header">Human Resources</div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Apply APEC policy.</li>
+                                    <li>Management of selection phases for all events.</li>
+                                    <li>Carry out organizational development systems and applying performance appraisals.</li>
+                                    <li>Maintain and raise the spirit of APEC crew.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" role="button" data-bs-toggle="modal" data-bs-target="#prPopUp">
+                    <img src="imgs/comm/mk.jpg" class="img-fluid">
+                    <p>Public Relations</p>
+                </div>
+                <div class="modal fade" id="prPopUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pop-up">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-header">Public relations and Marketing</div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Host APEC seminars & orientations.</li>
+                                    <li>Launch APEC events' campaigns; online and offline.</li>
+                                    <li>Make presentations for APEC events.</li>
+                                    <li>Deal with media sponsors.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" role="button" data-bs-toggle="modal" data-bs-target="#frPopUp">
+                    <img src="imgs/comm/fr.jpg" class="img-fluid">
+                    <p>Fund Raising</p>
+                </div>
+                <div class="modal fade" id="frPopUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pop-up">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-header">Fundraising</div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Raise the needed fund for APEC events.</li>
+                                    <li>Make academic deals.</li>
+                                    <li>Apply need analysis and market research.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" role="button" data-bs-toggle="modal" data-bs-target="#mmPopUp">
+                    <img src="imgs/comm/mm.jpg" class="img-fluid">
+                    <p>Multimedia</p>
+                </div>
+                <div class="modal fade" id="mmPopUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pop-up">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-header">Multimedia</div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Media coverage for APEC events; photographs and videos.</li>
+                                    <li>Design APEC printings; roll ups, banners, t-shirts, etc.</li>
+                                    <li>Work on events theme designs and events campaign.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" role="button" data-bs-toggle="modal" data-bs-target="#pmPopUp">
+                    <img src="imgs/comm/pm.jpg" class="img-fluid">
+                    <p>Project Management</p>
+                </div>
+                <div class="modal fade" id="pmPopUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pop-up">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-header">Project Management and Quality</div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Define project scope, quality standards, resources and deliverables.</li>
+                                    <li>Plan, manage and execute all of APEC’s events with utmost quality and efficiency.</li>
+                                    <li>Monitor and control events' preparation and execution and check deliverables quality.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" role="button" data-bs-toggle="modal" data-bs-target="#lgPopUp">
+                    <img src="imgs/comm/lgg.jpg" class="img-fluid">
+                    <p>Logistics</p>
+                </div>
+                <div class="modal fade" id="lgPopUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pop-up">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-header">Logistics and Reception</div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Conduct market survey to supply APEC with the needed materials.</li>
+                                    <li>Booth Designing, preparing and decorating.</li>
+                                    <li>APEC orientations and seminars reception.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="events animate" id="events">
+        <div class="container">
+            <div class="section-title">Our Events</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-12 col-md-4 me-md-3 left">
+                    <h3>APEC Visits</h3>
+                    <p>Help students to know more about Engineering majors, The latest scientific topics in each major by seminars and visits to firms and factories. It is also lighten the route of non-technical majors through online sessions with pioneers.</p>
+                    <h3>APEC Premium</h3>
+                    <p>APEC Premium presents to its applicants a wide variety of programs from national and multinational companies that provide sessions, trainings and internships for all engineering departments in technical and non-technical tracks.</p>
+                </div>
+                <div class="col-12 col-md-4 ms-md-3 right">
+                    <h3>Project package</h3>
+                    <p>A series of companies in different Engineering majors provided the needed services for seniors’ graduation projects that helped them overcome the challenges ahead through sponsorship programs for students aiming for the excellence of their projects.</p>
+                    <h3>APEC Blog</h3>
+                    <p>APEC Blog is an online platform that exhibits all of great talents to the world. It is the digital form of APEC Magazine which also includes topics about the upcoming technologies, technical and non-technical topics.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="contact animate" id="contact">
+        <div class="container">
+            <div class="section-title">Contact Us</div>
+            <form action="#">
+                <input type="text" placeholder="Name" class="name">
+                <input type="email" placeholder="Email" class="email">
+                <input type="text" placeholder="Subject" class="subject">
+                <textarea name="text" cols="100" rows="5" placeholder="Message Text" class="msg"></textarea>
+                <input type="submit" value="Send" class="send">
+            </form>
+        </div>
+    </div>
+    <hr style="color: white">
+    <p style="color: white; text-align: center;">Made with <i class="fa-solid fa-heart"></i> by Abdulrahman Adam</p>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

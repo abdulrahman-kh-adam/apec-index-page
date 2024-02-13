@@ -1,0 +1,484 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #030303;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8A1517;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    background-color: #030303;
+}
+
+/* Start Components */
+.section-title {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    width: 25%;
+    height: 1px;
+    border: 1px solid #8A1517;
+    position: absolute;
+    bottom: 0;
+    left: 37.5%;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* End Components */
+
+/* Start Header */
+.header {
+    background-color: #030303;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.heading-nav {
+    padding: 5px 0;
+}
+
+.nav-logo img {
+    width: 90px;
+    margin: 5px 0;
+}
+
+.nav-bar li {
+    padding: 10px;
+    list-style: none;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: #8A1517;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-bar li a:hover {
+    color: white;
+}
+
+.nav-bar li a:hover::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    border: 1px solid white;
+    position: absolute;
+    bottom: -5px;
+}
+
+.menu {
+    color: #8A1517;
+    font-size: 25px;
+}
+
+.nav-menu-mobile {
+    position: relative;
+}
+
+.nav-menu-mobile ul {
+    list-style: none;
+    position: absolute;
+    top: 45px;
+    width: 50%;
+    background-color: #030303;
+    z-index: 5;
+}
+
+.nav-menu-mobile ul li {
+    padding: 5px;
+}
+
+.nav-menu-mobile ul li a {
+    text-decoration: none;
+    color: #8A1517;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-menu-mobile ul li a:hover {
+    color: white;
+}
+
+.nav-menu-mobile ul li a:hover::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    border: 1px solid white;
+    position: absolute;
+    bottom: -5px;
+}
+/* End Header */
+
+/* Start Landing */
+.landing {
+    height: calc(100vh - 55.5px);
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.landing .landing-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    text-align: center;
+}
+
+.landing .landing-content .landing-title {
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.landing .landing-content .landing-title::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    border: 1px solid #8A1517;
+    left: 0;
+    bottom: 25px;
+}
+
+.landing .landing-content .landing-desc {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -15px;
+}
+
+.landing .landing-content .landing-foot {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.landing .landing-content .landing-foot .q-left,
+.landing .landing-content .landing-foot .q-right {
+    color: #8A1517;
+}
+
+@media (max-width: 767px) {
+    .landing .landing-content {
+        width: 80%;
+    }
+}
+/* End Landing */
+
+/* Start Sponsers */
+.sponsers {
+    background-color: #030303;
+    text-align: center;
+}
+
+.sponsers .main-partner,
+.sponsers .off-sponser,
+.sponsers .main-sponser {
+    padding-top: 90px;
+}
+
+.sponsers .main-partner .img,
+.sponsers .off-sponser .img,
+.sponsers .main-sponser .img {
+    padding-top: 50px;
+    width: 1000px;
+}
+@media (max-width: 767px) {
+    .sponsers {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* End Sponsers */
+
+/* Start Gallery */
+.gallery {
+    background-color: #030303;
+    text-align: center;
+}
+
+.gallery .gal-content {
+    padding-top: 150px;
+}
+
+.gallery .carousel-inner {
+    width: 70%;
+}
+
+#gallery-slideshow {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#gallery-slideshow img {
+    height: 600px;
+}
+
+.gallery #indicator {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #8A1517;
+    border-radius: 10px;
+    background-color: #8A1517;
+}
+@media (max-width: 767px) {
+    #gallery-slideshow img {
+        height: 400px;
+    }
+}
+/* End Gallery */
+
+/* Start About */
+.about {
+    margin-top: 70px;
+}
+
+.about .left,
+.about .right {
+    background-color: #0e0e0e;
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.about .left h3,
+.about .right h3 {
+    font-size: 28px;
+    color: #8A1517;
+}
+
+.about .left p,
+.about .right p {
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 767px) {
+    .about .left,
+    .about .right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .about .right {
+        margin-top: 0;
+    }
+}
+/* End About */
+
+/* Start comm */
+.committees {
+    margin-top: 70px;
+}
+
+.committees .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.committees .items {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    margin-top: 30px;
+}
+
+.committees .items .item {
+    width: 300px;
+    border: 10px solid #8A1517;
+    margin-bottom: -5px;
+    position: relative;
+    transition: 0.3;
+    cursor: pointer;
+}
+
+.committees .items .item img {
+    width: 100%;
+    transition: 0.3;
+}
+
+.committees .items .item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3;
+    display: none;
+}
+
+.committees .items .item:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 80%);
+    top: 0;
+    left: 0;
+    transition: 0.3;
+}
+
+.committees .items .item:hover p{
+    display: block;
+}
+
+.committees .modal {
+    text-align: center;
+    width: 100%;
+}
+
+.committees .pop-up {
+    background-color: #8A1517;
+    color: white;
+    position: relative;
+}
+
+.pop-up button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.committees .modal-header {
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.committees .modal-body {
+    font-size: 20px;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .committees .items {
+        grid-template-columns: 100%;
+    }
+}
+/* End comm */
+
+/* Start Events */
+.events {
+    margin-top: 70px;
+}
+
+.events .left,
+.events .right {
+    background-color: #0e0e0e;
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.events .left h3,
+.events .right h3 {
+    font-size: 28px;
+    color: #8A1517;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.events .left p,
+.events .right p {
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 767px) {
+    .events .left,
+    .events .right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .events .right {
+        margin-top: 0;
+    }
+}
+/* End Events */
+
+/* Start Contact */
+.contact {
+    margin-top: 70px;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact form input,
+.contact form textarea {
+    background-color: #0e0e0e;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.contact form input {
+    height: 50px;
+}
+
+.contact form textarea {
+    height: 130px;
+}
+
+.contact form input.name,
+.contact form input.email,
+.contact form input.subject {
+    grid-column: 1;
+}
+
+.contact form input.send,
+.contact form textarea.msg {
+    grid-column: 2;
+}
+.contact form textarea.msg {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.contact form input.send {
+    grid-row: 3;
+    transition: 0.3s;
+}
+
+.contact form input.send:hover {
+    background-color: #8A1517;
+}
+/* End Contact */
